@@ -1,0 +1,14 @@
+header {
+    height: 40vh;
+}
+.abtus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: yellow;
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding: 20px;
+    border: 3px solid yellow;
+}

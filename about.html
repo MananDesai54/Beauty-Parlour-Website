@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/1b8ba3dee0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menu">
+        <i class="fas fa-times fa-2x"></i>
+        <a href="#">Home</a>
+        <a href="./about.html" class="home">About Us</a>
+        <a href="#">Contact</a>
+        <a href="./index.html#speciality">Speciality</a>
+        <a href="#">Services</a>
+        <a href="https://api.whatsapp.com/send?phone=919824066488" class="reqApt">Request Appointment</a>    
+    </div>
+    <header>
+        <img class="hero-img" src="./beauty-parlor-spa-cosmetics-biological.jpg" alt="">
+        <nav class="nav">
+            <div class="container nav-container">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo">
+                    <img src="./Untitled-21.png" alt="logo">
+                </div>
+                <div class="appointment">
+                    <p>
+                        <a href="https://api.whatsapp.com/send?phone=919824066488" >Take Appointment</a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="abtus">
+            About
+        </div>
+    </header>
+    <script>
+        let bars = document.querySelector('.fa-bars');
+        let closeBtn = document.querySelector('.fa-times');
+        let menu = document.querySelector('.menu');
+        let menus = document.querySelectorAll('.menu a');
+
+        bars.addEventListener('click',()=>{
+            menu.classList.toggle('show');
+        });
+        closeBtn.addEventListener('click',()=>{
+            menu.classList.toggle('show');
+        });
+        menus.forEach(menu1=>{
+            menu1.addEventListener('click',()=>{
+                menu.classList.toggle('show');
+            })
+        });
+
+    </script>
+</body>
+</html>
