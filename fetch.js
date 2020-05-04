@@ -23,5 +23,24 @@ async function setImage() {
             e.target.children[0].classList.toggle('big');
         })
     }
+
+    let images = document.querySelectorAll('.gallery img');
+    
+    let options = {
+
+    }
+    let intersection = new IntersectionObserver((entries,observer)=>{
+        entries.forEach((entry)=>{
+            if(entry.isIntersecting) {
+                entry.target.classList.add('comeup');
+                console.log(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    })
+
+    images.forEach(image=>{
+        intersection.observe(image);
+    })
 }
 setImage();

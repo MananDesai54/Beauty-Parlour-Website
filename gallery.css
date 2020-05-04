@@ -14,6 +14,14 @@
     cursor: pointer;
     outline: none;
     pointer-events: none;
+    transform: translateY(50px);
+    opacity: 0;
+}
+.comeup {
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+    transition: transform 0.8s ease-in-out,
+    opacity 0.8s ease-in-out;
 }
 .nav {
     background: #1a2b3c;
@@ -33,6 +41,7 @@
 .big  {
     width: 70vmax !important;
     height: 70vmax !important;
+    border-radius: 5px !important;
 }
 @media(max-width:1100px) {
     .gallery {
@@ -54,10 +63,10 @@
 }
 @media(max-width:570px) {
     .gallery {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .gallery img {
-        height: 40vmax;
-        width: 40vmax;
+        height: 20vmax;
+        width: 20vmax;
     }
 }
