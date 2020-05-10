@@ -41,3 +41,6 @@ header {
     letter-spacing: 2px;
     margin: 10px;
 }
+h3 {
+    color: blueviolet !important;
+}
